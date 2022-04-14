@@ -1,0 +1,111 @@
+Design a web page to give details about one branch of a particular gym.
+Your web page should be simple in layout.
+
+Pointers:
+- Multiple Pages
+- Each Page should have no more than four headings
+- Include images of the place
+- Demonstrate the use of styling and formatting, and colours
+- Demonstrate the use of CSS
+- Hyperlinks
+
+On this webpage, your content may include:
+• Operating hours.
+• Address, phone number, and instructions on how to get there.
+• Photograph(s) of the place.
+• Short textual description of the branch, e.g., special features,
+programmes, etc.
+• Facilities available at the branch.
+• Rates: individual and/or corporate
+
+Gym: Virgin Active Tanjong Pagar
+
+Colour Palette:
+
+Dark Colours:
+Silver: #b3b4b7
+Darker Silver: #79828D
+
+Reds:
+Pastel Dark Pink: #f42020
+Dark Red: #bb0808
+Maroon: #750505
+Dark Brown / Maroon: #550303
+
+1. Main Page
+• Hidden Sticky Header.
+• Intro Video - https://www.youtube.com/watch?v=5y09lL2ZOYI
+• Common footer.
+
+2. Our Classes
+• Introduction.
+• Les Mills
+• Smart Weight Training
+• Reformer Pilates
+Timetable = https://www.virginactive.com.sg/home/timetables.aspx
+
+
+3. Our Facilities
+• Introduction.
+• The Pump.
+• Relax and Unwind.(Sleeping Pods & Toiletries - Experential Showers)
+
+4. Directions (Talk to us)
+• Operating hours.
+• Address, phone number, and instructions on how to get there.
+• Our rates.
+  - Kinds of memberships
+  - Access other clubs
+  https://www.virginactive.com.sg/home/our_clubs/tanjong_pagar.aspx
+• Sign up link. - https://www.virginactive.com.sg/home/join_us.aspx
+https://codemyui.com/expand-google-maps-from-circle-to-full-screen-animation/
+
+Font-Sizes
+
+.navbar a {
+  padding: 2rem;
+  font-size: 1.8rem;
+}
+
+.banner-text{
+  font-size: 7rem;
+}
+
+
+section .content h1{
+  font-size: 7rem;
+}
+
+section .content h2{
+  padding: 1rem;
+  font-weight: 4rem;
+  font-size: 4.4rem;
+}
+
+section .content p{
+  padding: 2rem;
+  font-size: 2.6rem;
+}
+
+figure.snip1256 {
+  font-size: 6rem;
+}
+
+figure.snip1256 p {
+  font-size: 3rem;
+}
+
+figure.snip1256 .read-more {
+  font-size: 4rem;
+}
+
+
+.btn span {
+  font-size: 3rem;
+}
+
+.go-up a {
+  font-size: 3rem;
+}
+
+<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=virgin%20active%20marina%20one&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>

@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Quicksand:wght@300&family=Spartan&family=Staatliches&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+mark.blacko {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0)
+}
+
+mark.red {
+    color: #f42020;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+mark.deepskyblue {
+    color:#00bfff;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+mark.lightpurple {
+    color:#b19cd9;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.header {
+  background: #fff;
+  color: #fff;
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.navbar img {
+  float: left;
+  display: block;
+  width: 10%;
+  height: 10%;
+}
+
+.navbar {
+  margin: auto;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: none;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.home-nav {
+  color: #000;
+}
+
+.navbar .home-nav::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.navbar .home-nav:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar .home-nav::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgba(255, 36, 36, 0.6);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.navbar .class-nav::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.navbar .class-nav:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar .class-nav::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgba(36, 226, 255, 0.6);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.navbar .facil-nav::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.navbar .facil-nav:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar .facil-nav::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgba(36, 255, 69, 0.6);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.navbar .join-nav::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.navbar .join-nav:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar .join-nav::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: rgba(255, 215, 36, 0.6);
+  z-index: -2;
+  transition: transform .3s ease;
+}
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #000;
+  position: relative;
+}
+
+.image-container img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner-overlay {
+    position: absolute;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    background: #000;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.banner-overlay:hover {
+  opacity: 0.8;
+}
+
+.banner-overlay > * {
+  transform: translateY(10rem);
+  transition: transform 0.3s;
+}
+
+.banner-overlay:hover > * {
+  transform: translateY(0);
+}
+
+.banner-text{
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 7rem;
+  font-family: 'Spartan', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.banner-text a {
+  background-image: linear-gradient(to right,#01ffff,
+  #01ffff 50%,#fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.banner-text a:before {
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.banner-text a:hover {
+ background-position: 0;
+}
+
+.banner-text a:hover::before {
+  width: 100%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: repeating-radial-gradient(#00cef1, #00b8ea);
+  border: 0.5rem solid #fff;
+}
+
+section .content h1{
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  font-weight: 10rem;
+  font-size: 7rem;
+  transition: 0.5s;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+section .content h1[data-scroll="in"]
+{
+  transform: scaleX(1);
+}
+
+section .content h1:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transform-origin: right;
+  transition: 0.5s;
+}
+
+section .content h1[data-scroll="in"]:before {
+  transform: scaleX(0);
+  transition-delay: 0.5s;
+}
+
+section .content {
+  max-width: 80%;
+}
+
+section .content h2{
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
+  font-weight: 4rem;
+  font-size: 4.4rem;
+  transition: 0.5s;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+section .content h2[data-scroll="in"]
+{
+  transform: scaleX(1);
+}
+
+section .content h2:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform-origin: right;
+  transition: 0.5s;
+}
+
+section .content h2[data-scroll="in"]:before {
+  transform: scaleX(0);
+  transition-delay: 0.5s;
+}
+
+section .content p{
+  position: relative;
+  margin: 5px 0 0;
+  padding: 2rem;
+  display: inline-block;
+  font-family: 'Lexend', sans-serif;
+  color: #fff;
+  text-align: left;
+  font-weight: 10rem;
+  font-size: 2.6rem;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+section .content p[data-scroll="in"]
+{
+  transform: scaleX(1);
+  transition-delay: 1s;
+}
+
+section .content p:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform-origin: right;
+  transition: 0.5s;
+}
+
+section .content p[data-scroll="in"]:before
+{
+  transform: scaleX(0);
+  transition-delay: 1.5s;
+}
+
+section .book {
+  color: #fff;
+  text-decoration: none;
+  }
+
+.facils-cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/facilities/BG.png");
+}
+
+.flip-card-container {
+  width: 100%;
+  height: 60vh;
+  perspective: 3000px;
+  margin: 5rem;
+}
+
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-container:hover .flip-card{
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.flip-card-front {
+background-color: #fff;
+color: #fff;
+padding: 0.2rem;
+}
+
+.flip-card-back {
+background-color: #fff;
+color: #000;
+transform: rotateY(180deg);
+background-image: repeating-radial-gradient(#fff, #b3b4b7);
+}
+
+.flip-card-front img{
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-back p{
+  margin: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Spartan', sans-serif;
+}
+
+.flip-card-back p span{
+  display: block;
+  font-size: 4rem;
+  font-family: 'Staatliches', cursive;
+  margin-bottom: 1rem;
+}
+
+.go-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: #fff;
+}
+
+.go-up a {
+  color: #000;
+  font-family: 'Staatliches', cursive;
+  font-weight: 1.2rem;
+  font-size: 3rem;
+  padding-bottom: 0.6rem;
+  font-weight: 2rem;
+  text-decoration: none;
+}
+
+/* Laptops & Small Screens */
+
+@media screen and (max-width: 1200px) {
+  .navbar a {
+    padding: 1.4rem;
+    font-size: 1.4rem;
+  }
+
+  .banner-text{
+    font-size: 5.2rem;
+  }
+
+
+  section .content h1{
+    font-size: 5.2rem;
+  }
+
+  section .content h2{
+    padding: 0.8rem;
+    font-weight: 2.8rem;
+    font-size: 3.2rem;
+  }
+
+  section .content p{
+    padding: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .go-up a {
+    font-size: 2rem;
+  }
+
+  .flip-card-container {
+    height: 60vh;
+    margin: 2rem;
+  }
+
+  .flip-card-back p{
+    margin: 0.5rem;
+    font-size: 1.6rem;
+  }
+
+  .flip-card-back p span{
+    display: block;
+    font-size: 2.4rem;
+    font-family: 'Staatliches', cursive;
+    margin-bottom: 0.5rem;
+  }
+
+
+}
+
+/* iPads & Tablets */
+
+@media screen and (max-width: 768px) {
+
+  .navbar a {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .banner-text{
+    font-size: 3.6rem;
+  }
+
+
+  section .content h1{
+    font-size: 4.2rem;
+  }
+
+  section .content h2{
+    padding: 0.8rem;
+    font-weight: 2.5rem;
+    font-size: 2.6rem;
+  }
+
+  section .content p{
+    padding: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .go-up a {
+    font-size: 1.8rem;
+  }
+
+  .flip-card-container {
+    height: 50vh;
+    margin: 2rem;
+  }
+
+}
+
+/* Mobile Devices */
+
+@media screen and (max-width: 480px) {
+
+
+    .navbar a {
+      padding: 1rem;
+      font-size: 1.2rem;
+    }
+
+    .banner-text{
+      font-size: 3.6rem;
+    }
+
+
+    section .content h1{
+      font-size: 3.6rem;
+    }
+
+    section .content h2{
+      padding: 0.8rem;
+      font-weight: 2.5rem;
+      font-size: 2.4rem;
+    }
+
+    section .content p{
+      padding: 2rem;
+      font-size: 1.6rem;
+    }
+
+    .go-up a {
+      font-size: 1.2rem;
+    }
+
+    .flip-card-container {
+      height: 40vh;
+    }
+
+    .flip-card-back p{
+      margin: 0.5rem;
+      font-size: 1.4rem;
+    }
+
+    .flip-card-back p span{
+      display: block;
+      font-size: 2.2rem;
+      font-family: 'Staatliches', cursive;
+      margin-bottom: 0.5rem;
+    }
+
+
+}
